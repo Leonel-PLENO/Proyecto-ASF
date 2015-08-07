@@ -178,7 +178,7 @@ void board_init(void)
   c8:	08 95       	ret
 
 000000ca <main>:
-}
+
 
 int main (void)
 {

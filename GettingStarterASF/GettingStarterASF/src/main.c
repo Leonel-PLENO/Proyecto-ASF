@@ -48,6 +48,9 @@ int fprueba (int vacio){
 	return vacio;
 }
 
+//cambios de texto
+
+
 int main (void)
 {
 	/* Insert system clock initialization code here (sysclk_init()). */
