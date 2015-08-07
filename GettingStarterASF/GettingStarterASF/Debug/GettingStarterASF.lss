@@ -7,23 +7,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   1 .comment      00000030  00000000  00000000  00000156  2**0
                   CONTENTS, READONLY
-  2 .debug_aranges 00000070  00000000  00000000  00000186  2**0
+  2 .debug_aranges 00000078  00000000  00000000  00000186  2**0
                   CONTENTS, READONLY, DEBUGGING
-  3 .debug_info   00000800  00000000  00000000  000001f6  2**0
+  3 .debug_info   00000831  00000000  00000000  000001fe  2**0
                   CONTENTS, READONLY, DEBUGGING
-  4 .debug_abbrev 000003df  00000000  00000000  000009f6  2**0
+  4 .debug_abbrev 000003ee  00000000  00000000  00000a2f  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_line   00000cdd  00000000  00000000  00000dd5  2**0
+  5 .debug_line   00000cb9  00000000  00000000  00000e1d  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_frame  0000008c  00000000  00000000  00001ab4  2**2
+  6 .debug_frame  0000009c  00000000  00000000  00001ad8  2**2
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_str    0001181c  00000000  00000000  00001b40  2**0
+  7 .debug_str    0001171e  00000000  00000000  00001b74  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_loc    0000016b  00000000  00000000  0001335c  2**0
+  8 .debug_loc    0000016b  00000000  00000000  00013292  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_ranges 00000070  00000000  00000000  000134c7  2**0
+  9 .debug_ranges 00000078  00000000  00000000  000133fd  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_macro  0000434d  00000000  00000000  00013537  2**0
+ 10 .debug_macro  00004308  00000000  00000000  00013475  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -178,7 +178,7 @@ void board_init(void)
   c8:	08 95       	ret
 
 000000ca <main>:
-#define LED_RED		IOPORT_CREATE_PIN(PORTA, 6)
+}
 
 int main (void)
 {

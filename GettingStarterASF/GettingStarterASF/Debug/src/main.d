@@ -1,5 +1,6 @@
 src/main.d src/main.o: ../src/main.c ../src/asf.h \
- ../src/ASF/mega/drivers/adc/adc.h ../src/ASF/mega/utils/compiler.h \
+ ../src/ASF/mega/drivers/cpu/mega_reset_cause.h \
+ ../src/ASF/mega/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -19,8 +20,6 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  ../src/ASF/mega/utils/progmem.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
- ../src/ASF/mega/drivers/adc/adc_megaxx0_1_4.h \
- ../src/ASF/mega/drivers/cpu/mega_reset_cause.h \
  ../src/ASF/common/services/delay/delay.h \
  ../src/ASF/common/services/clock/sysclk.h ../src/config/conf_clock.h \
  ../src/ASF/common/services/clock/mega/sysclk.h \
@@ -35,7 +34,7 @@ src/main.d src/main.o: ../src/main.c ../src/asf.h \
 
 ../src/asf.h:
 
-../src/ASF/mega/drivers/adc/adc.h:
+../src/ASF/mega/drivers/cpu/mega_reset_cause.h:
 
 ../src/ASF/mega/utils/compiler.h:
 
@@ -78,10 +77,6 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 ../src/ASF/mega/utils/progmem.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
-
-../src/ASF/mega/drivers/adc/adc_megaxx0_1_4.h:
-
-../src/ASF/mega/drivers/cpu/mega_reset_cause.h:
 
 ../src/ASF/common/services/delay/delay.h:
 

@@ -35,7 +35,6 @@
     <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.services.ioport" value="Add" config="" content-id="Atmel.ASF" />
     <option id="mega.drivers.ioport" value="Add" config="" content-id="Atmel.ASF" />
-    <option id="mega.drivers.adc" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.applications.user_application" value="Add" config="" content-id="Atmel.ASF" />
   </options>
   <configurations />
@@ -68,8 +67,6 @@
     <file path="src/ASF/common/services/ioport/mega/ioport.h" framework="" version="3.25.0" source="common\services\ioport\mega\ioport.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/delay/mega/cycle_counter.h" framework="" version="3.25.0" source="common\services\delay\mega\cycle_counter.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/delay/delay.h" framework="" version="3.25.0" source="common\services\delay\delay.h" changed="False" content-id="Atmel.ASF" />
-    <file path="src/ASF/mega/drivers/adc/adc.h" framework="" version="3.25.0" source="mega\drivers\adc\adc.h" changed="False" content-id="Atmel.ASF" />
-    <file path="src/ASF/mega/drivers/adc/adc_megaxx0_1_4.h" framework="" version="3.25.0" source="mega\drivers\adc\adc_megaxx0_1_4.h" changed="False" content-id="Atmel.ASF" />
   </files>
   <documentation help="http://asf.atmel.com/docs/3.25.0/common.applications.user_application.mega_1284p_xplained/html/index.html" />
   <offline-documentation help="" />
@@ -123,7 +120,6 @@
       <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/mega/drivers/adc</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -153,7 +149,6 @@
       <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/mega/drivers/adc</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
 </AvrGcc>
@@ -188,7 +183,6 @@
       <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/mega/drivers/adc</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -219,7 +213,6 @@
       <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/mega/drivers/adc</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
   <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
@@ -243,11 +236,12 @@
     <Folder Include="src\ASF\common\utils\" />
     <Folder Include="src\ASF\common\utils\interrupt\" />
     <Folder Include="src\ASF\common\utils\make\" />
+    <Folder Include="src\ASF\common\utils\stdio\" />
+    <Folder Include="src\ASF\common\utils\unit_test\" />
     <Folder Include="src\ASF\mega\" />
     <Folder Include="src\ASF\mega\boards\" />
     <Folder Include="src\ASF\mega\boards\mega_1284p_xplained\" />
     <Folder Include="src\ASF\mega\drivers\" />
-    <Folder Include="src\ASF\mega\drivers\adc\" />
     <Folder Include="src\ASF\mega\drivers\cpu\" />
     <Folder Include="src\ASF\mega\utils\" />
     <Folder Include="src\ASF\mega\utils\assembler\" />
@@ -337,12 +331,6 @@
       <SubType>compile</SubType>
     </None>
     <None Include="src\ASF\mega\utils\preprocessor\tpaste.h">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="src\ASF\mega\drivers\adc\adc.h">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="src\ASF\mega\drivers\adc\adc_megaxx0_1_4.h">
       <SubType>compile</SubType>
     </None>
     <Compile Include="src\main.c">

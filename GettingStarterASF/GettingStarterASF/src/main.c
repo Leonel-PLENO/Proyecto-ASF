@@ -44,6 +44,10 @@
 #define LED_GREEN    IOPORT_CREATE_PIN(PORTA, 5)
 #define LED_RED		IOPORT_CREATE_PIN(PORTA, 6)
 
+int fprueba (int vacio){
+	return vacio;
+}
+
 int main (void)
 {
 	/* Insert system clock initialization code here (sysclk_init()). */
@@ -62,6 +66,9 @@ int main (void)
 	
 	ioport_set_pin_high(LED_RED);
 	ioport_set_pin_low(LED_GREEN);
+	
+	
+	
 	
 	//gpio_set_pin_high(PORTA5);
 	
